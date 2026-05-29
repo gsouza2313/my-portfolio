@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-:root{
+
+:root {
     --clr-primary: #e02e2d;
     --clr-white: #eef2f5;
     --clr-black: #191919;
@@ -9,31 +10,70 @@
     font-size: 14px;
     line-height: 18px;
 }
-header{
+
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
     padding: 1rem 2rem;
-    
+
     background-color: var(--clr-white);
     color: var(--clr-black);
 
-    box-shadow: 0px 4px 6px rgba(243, 243, 243, 0.25) ;
+    box-shadow: 0px 4px 6px #f3f3f340;
 }
-header h1{
+
+header h1 {
     font-size: 22px;
     font-weight: 500;
 
 }
-header nav{
+
+header nav {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-header a{
-color: var(--clr-black);
+
+header a {
+    color: var(--clr-black);
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px #f3f3f340;
+}
+
+.home-main {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    height: 444px;
+    width: 1068px;
+}
+
+.txtbotao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 50%;
+    height: 100%;
+
+}
+
+.logotipo {
+    width: 50%;
+    height: 100%;
+}
+
+.imagem {
+    height: 444px;
+    padding-top: 15px;
 }
