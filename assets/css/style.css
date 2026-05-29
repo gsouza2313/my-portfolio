@@ -76,10 +76,10 @@ header a {
     height: 444px;
     padding-top: 15px;
     z-index: 1;
-    position: fixed;
+    position: absolute;
 }
 
-.bolavermelha{
+.bolavermelha {
     background-color: var(--clr-primary);
     border-radius: 100%;
     width: 30%;
@@ -90,8 +90,66 @@ header a {
     z-index: 0;
     box-shadow: 3px 4px 10px 10px var(--clr-primary);
 }
-.img{
+
+.img {
     size: 20%;
+}
+
+.sobre {
+    height: 493px;
+    width: 100%;
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.imagemdeperfil {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 320px;
+    border-radius: 50px;
+    box-shadow: -1px -1px 10px 2px var(--clr-black);
+
+}
+
+.pfp {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    width: 70%;
+    height: 100%;
+}
+
+.textarea {
+  display: block;       /* transforma o span em bloco para aceitar largura */
+  max-width: 600px;     /* define a largura máxima */
+  margin: 0 auto;       /* centraliza horizontalmente */
+  line-height: 1.6;     /* melhora a legibilidade */
+}
+
+.buttons-div {
+    display: flex;
+    gap: 10px;
+
+}
+
+.svg {
+    position: absolute;
 }
 
 /* COMPONENTE BOTÂO HOME */
