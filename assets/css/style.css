@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-:root{
+
+:root {
     --clr-primary: #e02e2d;
     --clr-white: #eef2f5;
     --clr-black: #191919;
@@ -9,31 +10,223 @@
     font-size: 14px;
     line-height: 18px;
 }
-header{
+
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
     padding: 1rem 2rem;
-    
+
     background-color: var(--clr-white);
     color: var(--clr-black);
 
-    box-shadow: 0px 4px 6px rgba(243, 243, 243, 0.25) ;
+    box-shadow: 0px 4px 6px #f3f3f340;
 }
-header h1{
+
+header h1 {
     font-size: 22px;
     font-weight: 500;
 
 }
-header nav{
+
+header nav {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-header a{
-color: var(--clr-black);
+
+header a {
+    color: var(--clr-black);
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
 }
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-main {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    height: 444px;
+    width: 1068px;
+}
+
+.txtbotao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 50%;
+    height: 100%;
+
+}
+
+.logotipo {
+    width: 50%;
+    height: 100%;
+}
+
+.imagem {
+    height: 444px;
+    padding-top: 15px;
+    z-index: 1;
+    position: fixed;
+}
+
+.bolavermelha{
+    background-color: var(--clr-primary);
+    border-radius: 100%;
+    width: 30%;
+    height: 55%;
+    position: absolute;
+    top: 13%;
+    right: 18%;
+    z-index: 0;
+    box-shadow: 3px 4px 10px 10px var(--clr-primary);
+}
+
+/* COMPONENTE BOTÂO HOME */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.buttons {
+    margin-top: 50px;
+    border-radius: 30px;
+}
+
+.blob-btn {
+    z-index: 1;
+    position: relative;
+    padding: 10px 24px;
+    /* antes: 20px 46px */
+    margin-bottom: 20px;
+    /* antes: 30px */
+    text-align: center;
+    color: var(--clr-black);
+    font-size: 14px;
+    /* antes: 16px */
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: color 0.5s;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+
+.blob-btn:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #474747;
+    border-radius: 30px;
+}
+
+.blob-btn:after {
+    content: "";
+    z-index: -2;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s 0.2s;
+    border-radius: 30px;
+}
+
+.blob-btn:hover {
+    color: #460d0d;
+    border-radius: 30px;
+}
+
+.blob-btn:hover:after {
+    transition: all 0.3s;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+}
+
+.blob-btn__inner {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: #ffffff;
+}
+
+.blob-btn__blobs {
+    position: relative;
+    display: block;
+    height: 100%;
+    filter: url('#goo');
+}
+
+.blob-btn__blob {
+    position: absolute;
+    top: 2px;
+    width: 25%;
+    height: 100%;
+    background: var(--clr-primary);
+    border-radius: 100%;
+    transform: translate3d(0, 150%, 0) scale(1.7);
+    transition: transform 0.45s;
+}
+
+@supports (filter: url('#goo')) {
+    .blob-btn__blob {
+        transform: translate3d(0, 150%, 0) scale(1.4);
+    }
+}
+
+.blob-btn__blob:nth-child(1) {
+    left: 0%;
+    transition-delay: 0s;
+}
+
+.blob-btn__blob:nth-child(2) {
+    left: 30%;
+    transition-delay: 0.08s;
+}
+
+.blob-btn__blob:nth-child(3) {
+    left: 60%;
+    transition-delay: 0.16s;
+}
+
+.blob-btn__blob:nth-child(4) {
+    left: 90%;
+    transition-delay: 0.24s;
+}
+
+.blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.7);
+}
+
+@supports (filter: url('#goo')) {
+    .blob-btn:hover .blob-btn__blob {
+        transform: translateZ(0) scale(1.4);
+    }
+}
+
+/* END COMPONENTE BOTÂO HOME */
