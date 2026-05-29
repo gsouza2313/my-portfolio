@@ -90,6 +90,9 @@ header a {
     z-index: 0;
     box-shadow: 3px 4px 10px 10px var(--clr-primary);
 }
+.img{
+    size: 20%;
+}
 
 /* COMPONENTE BOTÂO HOME */
 
@@ -124,6 +127,7 @@ header a {
     transition: color 0.5s;
     cursor: pointer;
     border-radius: 30px;
+    text-decoration: none;
 }
 
 
