@@ -30,10 +30,34 @@
                         <h1>Olá, sou Guilherme de Souza</h1>
                         <p>Discente de Ciência da Computação e Trainee da byron.solutions</p>
                     </div>
-                    <div class="button"><a href="https://github.com/gsouza2313" target="_blank">@gsouza2313</a></div>
+                    <!-- <div class="button"><a href="https://github.com/gsouza2313" target="_blank">@gsouza2313</a></div> -->
+                    <div class="buttons">
+                        <button class="blob-btn">
+                            @gsouza2313
+                            <span class="blob-btn__inner">
+                                <span class="blob-btn__blobs">
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                </span>
+                            </span>
+                        </button>
+                        <br />
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix"
+                                        values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
                 </div>
                 <div class="logotipo"><img src="assets/img/guts.png" alt="" class="imagem"></div>
-            </div>
     </main>
 </body>
 
