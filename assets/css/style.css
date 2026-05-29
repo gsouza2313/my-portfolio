@@ -9,3 +9,11 @@
     font-size: 14px;
     line-height: 18px;
 }
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+}
