@@ -3,6 +3,8 @@
     --clr-primary: #e02e2d;
     --clr-white: #eef2f5;
     --clr-black: #191919;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
     font-family: "Poppins", Helvetica, sans-serif;
     font-size: 14px;
     line-height: 18px;
