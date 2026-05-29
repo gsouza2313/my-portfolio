@@ -47,7 +47,6 @@ header a {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 4px 6px #f3f3f340;
 }
 
 .home-main {
@@ -76,7 +75,23 @@ header a {
 .imagem {
     height: 444px;
     padding-top: 15px;
+    z-index: 1;
+    position: fixed;
 }
+
+.bolavermelha{
+    background-color: var(--clr-primary);
+    border-radius: 100%;
+    width: 30%;
+    height: 55%;
+    position: absolute;
+    top: 13%;
+    right: 18%;
+    z-index: 0;
+    box-shadow: 3px 4px 10px 10px var(--clr-primary);
+}
+
+/* COMPONENTE BOTÂO HOME */
 
 *,
 *:before,
@@ -213,3 +228,5 @@ header a {
         transform: translateZ(0) scale(1.4);
     }
 }
+
+/* END COMPONENTE BOTÂO HOME */
