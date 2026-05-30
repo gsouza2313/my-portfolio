@@ -52,6 +52,7 @@ header a {
 .home-main {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 0;
     height: 444px;
     width: 1068px;
@@ -136,10 +137,15 @@ header a {
 }
 
 .textarea {
-  display: block;       /* transforma o span em bloco para aceitar largura */
-  max-width: 600px;     /* define a largura máxima */
-  margin: 0 auto;       /* centraliza horizontalmente */
-  line-height: 1.6;     /* melhora a legibilidade */
+    display: block;
+    /* transforma o span em bloco para aceitar largura */
+    max-width: 600px;
+    /* define a largura máxima */
+    margin: 0 auto;
+    /* centraliza horizontalmente */
+    line-height: 1.6;
+    /* melhora a legibilidade */
+    text-align: justify;
 }
 
 .buttons-div {
@@ -150,6 +156,39 @@ header a {
 
 .svg {
     position: absolute;
+}
+
+.cards {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.projetos-main {
+    height: 543px;
+    width: 70%;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.adjust {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 493px;
 }
 
 /* COMPONENTE BOTÂO HOME */
@@ -292,3 +331,103 @@ header a {
 }
 
 /* END COMPONENTE BOTÂO HOME */
+
+/* START COMPONENTE CARDS */
+.card {
+    width: 80%;
+    /* w-80 */
+    padding: 1rem;
+    /* p-4 */
+    background-color: #ffffff;
+    /* bg-white */
+    border-radius: 0.5rem;
+    /* rounded-lg */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* shadow-md */
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    /* transition-transform duration-300 ease-in-out */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* hover:scale-105 */
+}
+
+.card img {
+    width: 100%;
+    /* w-full */
+    height: 10rem;
+    /* h-40 */
+    object-fit: cover;
+    /* object-cover */
+    border-top-left-radius: 0.5rem;
+    /* rounded-t-lg */
+    border-top-right-radius: 0.5rem;
+}
+
+.card-content {
+    padding: 1rem;
+    /* p-4 */
+}
+
+.card-content h2 {
+    font-size: 1.25rem;
+    /* text-xl */
+    font-weight: 600;
+    /* font-semibold */
+}
+
+.card-content p {
+    color: #4B5563;
+    /* text-gray-600 */
+}
+
+.card-footer {
+    display: flex;
+    /* flex */
+    justify-content: space-between;
+    /* justify-between */
+    align-items: center;
+    /* items-center */
+    margin-top: 1rem;
+    /* mt-4 */
+}
+
+
+/* END COMPONENTE CARDS */
+
+/* Botão GitHub Repositórios - Projetos */
+.btn-repos {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 20px;
+    background-color: transparent;
+    border: 2px solid #474747;
+    border-radius: 30px;
+    color: var(--clr-white);
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.btn-repos img {
+    height: 18px;
+    width: 18px;
+    filter: invert(1);
+}
+
+.btn-repos:hover {
+    background-color: var(--clr-primary);
+    border-color: var(--clr-primary);
+    color: var(--clr-white);
+}
+
+.btn-repos:hover img {
+    filter: invert(1) brightness(2);
+}
