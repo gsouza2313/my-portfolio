@@ -21,7 +21,11 @@ header {
     background-color: var(--clr-white);
     color: var(--clr-black);
 
-    box-shadow: 0px 4px 6px #f3f3f340;
+    position: sticky; 
+    top: 0;           
+    z-index: 1000;
+
+    box-shadow: 0px 4px 6px rgba(243, 243, 243, 0.25) ;
 }
 
 header h1 {
