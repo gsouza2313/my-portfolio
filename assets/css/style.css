@@ -167,12 +167,12 @@ header a {
 .projetos-main {
     height: 543px;
     width: 70%;
-    padding-top: 5rem;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-
+    position: relative;
 }
 
 .adjust {
@@ -190,7 +190,11 @@ header a {
     align-items: center;
     height: 493px;
 }
-
+.projetos h1{
+    text-transform: uppercase;
+    font-weight: 300;
+    justify-self: baseline;
+}
 /* COMPONENTE BOTÂO HOME */
 
 *,
