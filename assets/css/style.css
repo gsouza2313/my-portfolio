@@ -9,6 +9,8 @@
     font-family: "Poppins", Helvetica, sans-serif;
     font-size: 14px;
     line-height: 18px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 20rem;
 }
 
 header {
@@ -72,6 +74,7 @@ footer img {
     height: 80vh;
     width: 90%;
     max-width: 1068px;
+    scroll-margin-top: 80px;
 }
 
 .imagem {
