@@ -238,7 +238,7 @@ header a {
 }
 
 .sec {
-    min-height: 610px;
+    height: 500px;
     width: 100%;
     background-color: var(--clr-white);
     display: flex;
@@ -280,6 +280,30 @@ header a {
     font-weight: 600;
     letter-spacing: 2px;
     margin-bottom: 1rem;
+}
+
+.contato {
+    height: 336px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato>p {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.contatos {
+    height: 110px;
+    align-content: center;
+}
+
+.frase {
+    align-content: end;
 }
 
 /* COMPONENTE BOTÂO HOME */
