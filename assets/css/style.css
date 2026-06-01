@@ -107,6 +107,8 @@ footer img {
     padding: 2rem 0;
 }
 
+
+
 .imagemdeperfil {
     height: 30vh;
     max-height: 320px;
@@ -200,6 +202,11 @@ footer img {
     margin: 0 auto;
     line-height: 1.6;
     text-align: justify;
+}
+
+.textarea img {
+    display: flex;
+    max-height: 2rem;
 }
 
 .buttons-div {
