@@ -608,14 +608,14 @@ header a {
 }
 
 .css:hover {
-    background-color: #429fd4;
+    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
     transition-duration: 0.3s;
     transform: scale(1.2);
 }
 
 /* C */
 .c:hover {
-    background-color: #0072b1;
+    background-image: linear-gradient(to top, #006ac0 0%, #0066ff 100%);
     transition-duration: 0.3s;
     transform: scale(1.2);
 }
@@ -629,6 +629,20 @@ header a {
 /* GIT */
 .git:hover {
     background-color: #f17916;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+}
+
+/* OCTAVE */
+.octave:hover {
+    background-image: linear-gradient(to top, #006ac0 0%, #0066ff 100%);
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+}
+
+/* PYTHON */
+.python:hover {
+    background-image: linear-gradient(to top, #006ac0 0%, #0066ff 100%);
     transition-duration: 0.3s;
     transform: scale(1.2);
 }
