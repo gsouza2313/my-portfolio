@@ -55,9 +55,11 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
 footer img {
     max-height: 2rem;
 }
+
 .home {
     display: flex;
     justify-content: center;
@@ -79,30 +81,37 @@ footer img {
     height: clamp(20rem, 70vh, 50rem);
     padding-top: 15px;
     z-index: 1;
-    position: absolute;      
+    position: absolute;
 }
 
 .bolavermelha {
     background-color: var(--clr-primary);
     border-radius: 100%;
-    width: 100%;              
-    aspect-ratio: 1 / 1;    
-    position: absolute;       
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    position: absolute;
     z-index: 0;
     box-shadow: 3px 4px 10px 10px var(--clr-primary);
 }
 
+.sobre-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
 .sobre {
-    min-height: 493px;
     width: 100%;
     background-color: var(--clr-white);
     color: var(--clr-black);
     display: flex;
     justify-content: center;
     align-items: center;
+    height: auto;
+    min-height: 493px;
     padding: 2rem 0;
 }
-
 
 
 .imagemdeperfil {
@@ -116,14 +125,19 @@ footer img {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: auto;
     min-height: 580px;
     padding: 2rem 0;
 }
 
 .sec {
     height: auto;
-    padding: 3rem 0;
+    width: 100%;
     background-color: var(--clr-white);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem 0;
 }
 
 .txtbotao {
@@ -139,7 +153,7 @@ footer img {
 .logotipo {
     width: 50%;
     height: 100%;
-    position: relative;       
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,34 +161,6 @@ footer img {
 
 .img {
     size: 20%;
-}
-
-.sobre {
-    background-color: var(--clr-white);
-    color: var(--clr-black);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    min-height: 493px;
-    padding: 2rem 0;
-}
-
-.sobre-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
-}
-
-.imagemdeperfil {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    height: 320px;
-    border-radius: 50px;
-    box-shadow: -1px -1px 10px 2px var(--clr-black);
-
 }
 
 .pfp {
@@ -238,29 +224,12 @@ footer img {
 }
 
 
-
-.projetos {
-    display: flex;
-    align-items: center;
-    height: 580px;
-    justify-content: center;
-}
-
 .projetos h1 {
     text-transform: uppercase;
     font-weight: 300;
     text-align: center;
 }
 
-.sec {
-    height: 500px;
-    width: 100%;
-    background-color: var(--clr-white);
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 3rem 0;
-}
 
 .serviços {
     width: 30%;
@@ -332,7 +301,6 @@ footer img {
 .frase {
     align-content: end;
 }
-
 
 
 /* COMPONENTE BOTÂO HOME */
@@ -724,3 +692,231 @@ footer img {
 }
 
 /* END SOFTSKILS CARDS */
+
+/* START RESPONSIVIDADE PARA MOBILE */
+@media (max-width: 768px) {
+
+
+    header {
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    header nav {
+        display: none;
+    }
+
+
+    svg {
+        display: block;
+    }
+
+
+    .buttons svg,
+    .buttons-div svg {
+        position: absolute !important;
+        width: 0 !important;
+        height: 0 !important;
+        overflow: hidden !important;
+        pointer-events: none !important;
+    }
+
+
+    .home-main {
+        flex-direction: column;
+        height: auto;
+        min-height: 100svh;
+        padding: 2rem 1rem 3rem;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .txtbotao {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        order: 2;
+    }
+
+    .txtbotao .txt h1 {
+        font-size: clamp(1.4rem, 6vw, 2rem);
+    }
+
+    .txtbotao .txt p {
+        font-size: clamp(0.85rem, 3.5vw, 1rem);
+    }
+
+    .buttons {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    .blob-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .logotipo {
+        width: 100%;
+        height: clamp(220px, 55vw, 320px);
+        order: 1;
+    }
+
+    .imagem {
+        height: clamp(240px, 58vw, 340px);
+        position: absolute;
+        padding-top: 0;
+    }
+
+    .bolavermelha {
+        width: 55%;
+    }
+
+
+    .sobre-main {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0 1.5rem;
+        text-align: center;
+    }
+
+    .pfp {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagemdeperfil {
+        height: clamp(140px, 40vw, 220px);
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .textarea {
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .textarea img {
+        margin: 0.5rem auto 0;
+    }
+
+    .buttons-div {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .projetos {
+        height: auto;
+        min-height: auto;
+        padding: 2rem 0;
+    }
+
+    .projetos-main {
+        width: 90%;
+        padding: 1.5rem 0;
+        gap: 24px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+
+    .sec {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1.5rem;
+        gap: 2rem;
+        overflow: visible;
+        position: relative;
+        z-index: 1;
+    }
+
+    .serviços {
+        width: 100%;
+        padding: 0;
+    }
+
+    .serviços>p,
+    .conhecimento>p {
+        text-align: center;
+    }
+
+    .conhecimento {
+        width: 100%;
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .cardc {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .cardsv {
+        width: 100%;
+        min-height: 80px;
+        height: 80px;
+    }
+
+    .contato {
+        align-items: flex-start;
+        padding: 2rem 1.5rem;
+    }
+
+    .contato>p {
+        align-self: center;
+    }
+
+    .contatos {
+        height: auto;
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        padding: 0;
+        width: 100%;
+    }
+
+    .telefone,
+    .email,
+    .instagram {
+        width: 100%;
+    }
+
+    .frase {
+        text-align: center;
+        padding: 0 1rem;
+        font-size: clamp(0.8rem, 3.5vw, 1rem);
+        align-self: center;
+    }
+
+    footer {
+        gap: 8px;
+        padding: 0 1rem;
+        font-size: 0.85rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        min-height: 70px;
+    }
+}
+/* END RESPONSIVIDADE PARA MOBILE */
