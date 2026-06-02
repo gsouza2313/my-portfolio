@@ -7,8 +7,7 @@
     background-color: var(--clr-black);
     color: var(--clr-white);
     font-family: "Poppins", Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1rem;
     scroll-behavior: smooth;
     scroll-padding-top: 20rem;
 }
@@ -31,9 +30,8 @@ header {
 }
 
 header h1 {
-    font-size: 22px;
+    font-size: clamp(16px, 3vw, 22px);
     font-weight: 500;
-
 }
 
 header nav {
@@ -78,20 +76,18 @@ footer img {
 }
 
 .imagem {
-    height: 70vh;
+    height: clamp(20rem, 70vh, 50rem);
     padding-top: 15px;
     z-index: 1;
-    position: absolute;
+    position: absolute;      
 }
 
 .bolavermelha {
     background-color: var(--clr-primary);
     border-radius: 100%;
-    width: 110%;
-    height: 80%;
-    position: relative;
-    top: 5%;
-    left: 12%;
+    width: 100%;              
+    aspect-ratio: 1 / 1;    
+    position: absolute;       
     z-index: 0;
     box-shadow: 3px 4px 10px 10px var(--clr-primary);
 }
@@ -110,11 +106,11 @@ footer img {
 
 
 .imagemdeperfil {
-    height: 30vh;
-    max-height: 320px;
+    height: clamp(160px, 30vw, 320px);
     border-radius: 50px;
     box-shadow: -1px -1px 10px 2px var(--clr-black);
 }
+
 
 .projetos {
     display: flex;
@@ -125,8 +121,8 @@ footer img {
 }
 
 .sec {
-    height: 610px;
-    width: 100%;
+    height: auto;
+    padding: 3rem 0;
     background-color: var(--clr-white);
 }
 
@@ -143,13 +139,10 @@ footer img {
 .logotipo {
     width: 50%;
     height: 100%;
-}
-
-.imagem {
-    height: 50rem;
-    padding-top: 15px;
-    z-index: 1;
-    position: absolute;
+    position: relative;       
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img {
@@ -157,13 +150,14 @@ footer img {
 }
 
 .sobre {
-    height: 493px;
-    width: 100%;
     background-color: var(--clr-white);
     color: var(--clr-black);
     display: flex;
     justify-content: center;
     align-items: center;
+    height: auto;
+    min-height: 493px;
+    padding: 2rem 0;
 }
 
 .sobre-main {
@@ -304,17 +298,18 @@ footer img {
 }
 
 .contato {
-    height: 336px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
+    min-height: 336px;
+    height: auto;
+    padding: 2rem 1rem;
 }
 
 .contato>p {
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: clamp(22px, 5vw, 36px);
     font-weight: 500;
 }
 
@@ -614,7 +609,7 @@ footer img {
     border: 10px solid var(--clr-primary);
     border-radius: 10px;
     justify-content: center;
-    font-size: 24px;
+    font-size: clamp(14px, 2.5vw, 24px);
     transform: rotateY(0deg);
 }
 
